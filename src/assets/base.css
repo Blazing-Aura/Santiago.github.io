@@ -1,0 +1,80 @@
+/* styling for entire website */
+:root {
+  --primary-colour: #e7dcc8;
+  --complement-colour: #eb8962;
+  --accent-colour: #3a60f0;
+
+  --darker-accent-colour: #2c49af;
+  --light-accent-colour: #788bca;
+  --light-colour: #a3abc5;
+  /* --third-colour: #3ad3f0;
+  --third-colour-faded: #446970; */
+  --white: rgba(255, 255, 255);
+  --black: rgb(0, 0, 0);
+
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+
+  --text-large: 1.5rem;
+  --text-medium: 1rem;
+  --text-small: 0.75rem;
+
+  --transition-duration: 0.5s;
+  --transition-behaviour: cubic-bezier(0.2, 0.75, 0.8, 0.25);
+}
+
+/* semantics for colour variables */
+:root {
+  --color-background: var(--primary-colour);
+  --color-heading: var(--complement-colour);
+  --color-text: var(--black);
+  --faded-background: rgba(231, 220, 200, 0.75);
+}
+
+/* if the user has dark theme on, change to that instead */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black);
+    --color-heading: var(--complement-colour);
+    --color-text: var(--white);
+    --faded-background: rgba(0, 0, 0, 0.5);
+  }
+} */
+
+/* font families for respective headers and paragraph tags */
+h1,
+h2,
+h3 {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: var(--color-heading);
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: var(--color-heading);
+  font-size: 2rem;
+}
+
+h3 {
+  color: var(--color-heading);
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: 'Sono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: medium;
+  font-variation-settings: 'MONO' 1;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
