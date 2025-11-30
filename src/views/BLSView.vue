@@ -64,10 +64,11 @@ const ProcessData: layoutData = {
       This video focuses on demonstrating the capabilities of the design, in addition to the purpose
       statement.
     </p>
-    <video id="video" controls controlslist="nodownload">
+    <iframe id="video" src="https://youtube.com/embed/ZgpM_8NdDDs"></iframe>
+    <!-- <video id="video" controls controlslist="nodownload">
       <source src="../../public/videos/BALS_Video.mp4" type="video/mp4" />
       Your browser does not support this tag.
-    </video>
+    </video> -->
   </section>
 </template>
 
@@ -108,6 +109,11 @@ const ProcessData: layoutData = {
 
   & p {
     padding: var(--padding-large);
+  }
+
+  & iframe {
+    height: 1080px;
+    width: 1820px;
   }
 }
 </style>
